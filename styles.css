@@ -1,0 +1,370 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.top-container {
+    width: 100%;
+    height: 200px;
+    background-color: #d6d6d6; /* Сірий колір */
+}
+
+/* Стилі для header контейнера */
+.header-container {
+    width: 1200px; /* Ширина контейнера */
+    height: 200px;
+    background-color: #d6d6d6; /* Сірий колір */
+    margin: 0 auto; /* Розміщення по центру екрану */
+    display: flex;
+    justify-content: center; /* Центрування робочої зони по горизонталі */
+    align-items: center; /* Центрування робочої зони по вертикалі */
+}
+
+
+.work-area {
+    width: 980px;
+    height: 100%; /* Висота з урахуванням внутрішніх відступів зверху і знизу */
+    padding: 60px 10px; /* Внутрішні відступи зверху і знизу 20px, зліва і справа 10px */
+    box-sizing: border-box; /* Враховує відступи в ширині та висоті */
+    display: flex;  
+}
+
+/* Стилі для контейнера з логотипом та назвою компанії */
+.company-container {
+    display: flex;
+}
+
+/* Стилі для логотипу компанії */
+.company-logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px; /* Відступ праворуч від картинки */
+}
+
+/* Стилі для назви компанії */
+.company-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000; /* Колір тексту */
+    margin-bottom: 20px; /* Відступ знизу */
+}
+
+/* Стилі для підзаголовку компанії */
+.company-subtitle {
+    font-size: 15px;
+    color: #8b8989; /* Колір тексту */
+    margin-top: 5px; /* Відступ зверху */
+}
+
+/* Стилі для контейнера номерів */
+.numbers-container {
+    margin-left: 475px;
+}
+
+/* Стилі для номерів телефону */
+.phone-number {
+    font-size: 35px;
+    font-family: 'Open Sans Condensed', sans-serif; /* Використання шрифту Open Sans Condensed */
+    color: #8b8989; /* Колір тексту */
+    margin-top: 10px; /* Відступ зверху */
+    text-decoration: none; /* Прибрати підкреслення */
+
+}
+
+.top-menu-container {
+    width: 100%;
+    height: 60px; 
+    background-color: #777777; /* Сірий колір */
+}
+
+.menu-container {
+    width: 1200px; /* Ширина контейнера */
+    height: 60px; 
+    background-color: #777777; /* Сірий колір */
+    margin: 0 auto; /* Розміщення по центру екрану */
+    display: flex;
+    justify-content: center; /* Центрування робочої зони по горизонталі */
+    align-items: center; /* Центрування робочої зони по вертикалі */
+}
+
+
+/* Стилі для контейнера робочої зони меню */
+.menu-work-area {
+    width: 980px;
+    height: 100%; /* Висота збігається з висотою header-container */
+    background-color: #777777;
+    margin: 0 auto; /* Автоматичне центрування по горизонталі */
+    padding: 15px 10px; /* Внутрішні відступи зверху і знизу 20px, зліва і справа 10px */
+    box-sizing: border-box; /* Враховує відступи в ширині та висоті */
+    display: flex;
+    justify-content: center; /* Центрування по горизонталі */
+}
+
+.menu-list a:hover {
+    text-decoration: underline; /* Підкреслення посилань при наведенні курсору */
+}
+.menu-list {
+    
+    list-style-type: none; /* Відключаємо маркери списку */
+    padding: 0; /* Відключаємо внутрішні відступи */
+    margin: 0; /* Відключаємо зовнішні відступи */
+    display: flex; /* Змінюємо режим відображення на flex */
+    justify-content: center; /* Центрування по горизонталі */
+}
+
+.menu-list li {
+    margin-right: 60px; /* Відступ між пунктами списку */
+    position: relative; /* Встановлюємо позицію relative для можливості відображення псевдоелементу */
+}
+
+.menu-list li:not(:last-child)::after {
+    content: "|"; /* Встановлюємо символ вертикальної розділової лінії */
+    position: absolute; /* Встановлюємо позицію absolute */
+    right: -30px; /* Позиціюємо розділову лінію відносно правого краю пункту */
+    top: 50%; /* Вертикальне позиціювання на середину пункту */
+    transform: translateY(-50%); /* Вирівнюємо по вертикалі */
+    font-weight: bold; /* Зробити лінію жирнішою */
+    font-size: 20px;
+    color: #ffffff; /* Колір розділової лінії */
+}
+
+.menu-list li a {
+    text-decoration: none; /* Відключаємо підкреслення посилань */
+    color: #ffffff; /* Колір тексту посилань */
+    font-size: 22px;
+}
+
+.top-picture-container {
+    width: 100%;
+    height: 350px; 
+    background-color: #f8f8f8; 
+}
+
+.picture-content {
+    width: 1200px;
+    height: 350px; /* Висота з урахуванням внутрішніх відступів зверху і знизу */
+    background-color: #f8f8f8;
+    margin: 0 auto; /* Автоматичне центрування по горизонталі */
+    padding: 0px 0px; /* Внутрішні відступи зверху і знизу 20px, зліва і справа 10px */
+    box-sizing: border-box; /* Враховує відступи в ширині та висоті */
+    display: flex;  
+    justify-content: center; /* Центрування по горизонталі */
+}
+
+.picture-content img {
+    max-width: 100%;
+    height: auto; /* Зберігає пропорції зображення */
+}
+
+/* Стилі для контейнера новин */
+.news-container {
+    width: 100%;
+    height: 700px; 
+    background-color: #ffffff; /* Можливий колір фону для контейнера новин */
+}
+
+/* Стилі для внутрішнього контейнера новин */
+.news-work-area {
+    width: 980px;
+    height: 100%; /* Висота збігається з висотою */
+    background-color: #ffffff;
+    margin: 0 auto; /* Автоматичне центрування по горизонталі */
+    padding: 30px 20px; /* Внутрішні відступи зверху і знизу 20px, зліва і справа 10px */
+    box-sizing: border-box; /* Враховує відступи в ширині та висоті */
+    display: flex;
+}
+
+/* Стилі для контейнера новин */
+.news-content {
+    width: 370px;
+    height: 530px;
+    background-color: #777777; /* Колір фону контейнера новин */
+    padding-left: 20px;
+    padding-right: 30px;
+    box-sizing: border-box; /* Враховує відступи в ширині та висоті */
+    position: relative; /* Встановлення відносного позиціювання для архіву новин */
+}
+
+/* Стилі для заголовку новин */
+.news-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff; /* Колір заголовку новин */
+    margin-bottom: 17px; /* Відступ знизу */
+    margin-top: 10px; /* Відступ зверху */
+}
+
+/* Стилі для списку новин */
+.news-list {
+    list-style-type: none; /* Відключаємо маркери списку */
+    padding: 0; /* Відключаємо внутрішні відступи */
+    margin: 0; /* Відключаємо зовнішні відступи */
+}
+
+/* Стилі для елементів списку новин */
+.news-list li {
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff; /* Колір тексту новин */
+    margin-bottom: 25px; /* Відступ знизу */
+}
+
+/* Оновлені стилі для дат новин */
+.news-date {
+    font-style: italic; /* Зробити текст курсивом */
+    margin-bottom: 0px; /* Зменшити відступ між датою та новиною */
+    display: block; /* Робимо дату блоковим елементом для правильного розташування */
+}
+
+/* Стилі для тексту "Архів новин" */
+.news-archive {
+    font-size: 14px;
+    color: #ffffff; /* Колір тексту */
+    text-align: right; /* Вирівнювання тексту по правому краю */
+    text-decoration: underline; /* Підкреслення тексту */
+    position: absolute; /* Абсолютне позиціювання */
+    bottom: 70px; /* Відступ знизу */
+    right: 40px; /* Відступ справа */
+}
+/* Стилі для посилань "Архів новин" */
+.news-archive a {
+    color: #ffffff; /* Змінено на білий колір */
+    text-decoration: underline; /* Підкреслення тексту */
+}
+
+/* Стилі для контейнера нашої студії */
+.studio-container {
+    width: 600px;
+    height: 510px;  
+    background-color: #ffffff;
+    margin-left: 40px; /* Відступ від лівого краю контейнера новин */
+    padding: 10px; /* Внутрішні відступи */
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+/* Стилі для заголовка нашої студії */
+.studio-title {
+    font-size: 40px;
+    color: #333333;
+    margin-bottom: 15px; /* Відступ знизу */
+}
+
+/* Стилі для тексту в нашій студії */
+.studio-container p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #666666;
+    margin-bottom: 20px; /* Відступ знизу між параграфами */
+}
+
+/* Стилі для контейнера футера */
+.footer-container {
+    width: 100%;
+    height: 220px; 
+    background-color: #777777;
+    
+}
+
+.footero-container {
+    width: 1200px; /* Ширина контейнера */
+    height: 220px;
+    background-color: #777777; /* Сірий колір */
+    margin: 0 auto; /* Розміщення по центру екрану */
+    display: flex;
+    justify-content: center; /* Центрування робочої зони по горизонталі */
+    /* align-items: center;  Центрування робочої зони по вертикалі */
+}
+
+.footer-work-area {
+    width: 980px;
+    height: 100%; 
+    background-color: #777777;
+    margin: 0 auto; 
+    padding: 40px 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+/* Стилі для контейнера з копірайтом */
+.copyright-container {
+    width: 280px;
+    height: 100px; 
+    text-align: left;
+    background-color: #777777;
+ }
+
+ /* Стилі для тексту копірайту */
+ .copyright-container p {
+    margin: 0; /* Відключаємо зовнішні відступи */
+    font-size: 14px;
+    color: #ffffff;
+ }
+
+ /* Стилі для контейнера з посиланнями */
+.links-container {
+    margin-left: 105px;
+    width: 150px;
+    text-align: left;
+    background-color: #777777;
+}
+
+/* Стилі для вертикального списку посилань */
+.footer-links {
+    list-style-type: none; /* Відключаємо маркери списку */
+    padding: 0; /* Відключаємо внутрішні відступи */
+    margin: 0; /* Відключаємо зовнішні відступи */
+}
+
+/* Стилі для елементів списку посилань */
+.footer-links li {
+    margin-bottom: 8px; /* Відступ між пунктами списку */
+}
+
+/* Стилі для посилань */
+.footer-links a {
+    text-decoration: underline;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Стилі для контейнера-компанії */
+.company-logo-container {
+    width: 38px;
+    height: 40px;
+    display: flex;
+    justify-content: center; /* Центрування по горизонталі */
+    align-items: center; /* Центрування по вертикалі */
+}
+
+/* Стилі для логотипу компанії */
+.company-logo-small {
+    margin-left: 535px;
+    width: 30px;
+    height: 30px;
+    /* Додайте ваші стилі для логотипу компанії тут */
+}
+
+/* Стилі для контейнера розробки сайту */
+.development-container {
+    margin: 0; /* Відключаємо зовнішні відступи */
+    background-color: #777777;
+    width: 200px;
+    height: 60px;
+    font-size: 14px;
+    color: white;
+    text-align: start;
+    margin-left: 270px;
+}
+
+.development-container p {
+    margin: 0; /* Відключаємо зовнішні відступи */
+    font-size: 14px;
+    color: #ffffff;
+    
+ }
+/* Стилі для посилання в контейнері розробки сайту */
+.development-container a {
+    text-decoration: underline;
+    color: #ffffff; /* Колір тексту */
+}
