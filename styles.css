@@ -1,111 +1,113 @@
 body {
     font-family: 'PT Sans', sans-serif;
+    padding: 8px; /* Add padding for the white frame */
+    background-color: #fff; 
 }
 
 .top-container {
     width: 100%;
     height: 200px;
-    background-color: #d6d6d6; /* Сірий колір */
+    background-color: #d6d6d6; /* Gray color */
 }
 
-/* Стилі для header контейнера */
+/* Styles for header container */
 .header-container {
-    width: 1200px; /* Ширина контейнера */
+    width: 1200px; /* Container width */
     height: 200px;
-    background-color: #d6d6d6; /* Сірий колір */
-    margin: 0 auto; /* Розміщення по центру екрану */
+    background-color: #d6d6d6; /* Gray color */
+    margin: 0 auto; /* Center on the screen */
     display: flex;
-    justify-content: center; /* Центрування робочої зони по горизонталі */
-    align-items: center; /* Центрування робочої зони по вертикалі */
+    justify-content: center; /* Center work area horizontally */
+    align-items: center; /* Center work area vertically */
 }
-
 
 .work-area {
     width: 980px;
-    height: 100%; /* Висота з урахуванням внутрішніх відступів зверху і знизу */
-    padding: 60px 10px; /* Внутрішні відступи зверху і знизу 20px, зліва і справа 10px */
-    box-sizing: border-box; /* Враховує відступи в ширині та висоті */
-    display: flex;  
-}
-
-/* Стилі для контейнера з логотипом та назвою компанії */
-.company-container {
+    height: 100%; /* Height including top and bottom padding */
+    padding: 60px 10px; /* Top and bottom padding 60px, left and right padding 10px */
+    box-sizing: border-box; /* Includes padding in width and height */
     display: flex;
 }
 
-/* Стилі для логотипу компанії */
+/* Styles for the container with logo and company name */
+.company-container {
+    display: flex;
+    height: 100px; 
+}
+
+/* Styles for the company logo */
 .company-logo {
     width: 100px;
     height: 100px;
     margin-left: 10px;
-    margin-right: 10px; /* Відступ праворуч від картинки */
+    margin-right: 10px; /* Right margin of the image */
 }
 
-/* Стилі для назви компанії */
+/* Styles for the company name */
 .company-name {
     font-size: 22px;
     font-weight: bold;
-    color: #000; /* Колір тексту */
-    margin-bottom: 20px; /* Відступ знизу */
+    color: #777777; /* Text color */
+    display: block;
 }
 
-/* Стилі для підзаголовку компанії */
+/* Styles for the company subtitle */
 .company-subtitle {
     font-size: 15px;
-    color: #8b8989; /* Колір тексту */
-    margin-top: 5px; /* Відступ зверху */
+    color: #8b8989; /* Text color */
+    display: block;
+    margin-top: 10px; /* Reduce margin to bring it closer to the company name */
 }
 
-/* Стилі для контейнера номерів */
+/* Styles for number container */
 .numbers-container {
     margin-left: 475px;
 }
 
-/* Стилі для номерів телефону */
+/* Styles for phone numbers */
 .phone-number {
     font-size: 35px;
-    font-family: 'Open Sans Condensed', sans-serif; /* Використання шрифту Open Sans Condensed */
-    color: #8b8989; /* Колір тексту */
-    margin-top: 10px; /* Відступ зверху */
-    text-decoration: none; /* Прибрати підкреслення */
+    font-family: 'Open Sans Condensed', sans-serif; 
+    color: #8b8989; /* Text color */
+    margin-top: 10px; /* Indent from top */
+    text-decoration: none; /* Remove underscore */
 
 }
 
 .top-menu-container {
     width: 100%;
     height: 60px; 
-    background-color: #777777; /* Сірий колір */
+    background-color: #777777; 
 }
 
 .menu-container {
-    width: 1200px; /* Ширина контейнера */
+    width: 1200px; 
     height: 60px; 
-    background-color: #777777; /* Сірий колір */
-    margin: 0 auto; /* Розміщення по центру екрану */
+    background-color: #777777; 
+    margin: 0 auto; /* Placement in the center of the screen */
     display: flex;
-    justify-content: center; /* Центрування робочої зони по горизонталі */
-    align-items: center; /* Центрування робочої зони по вертикалі */
+    justify-content: center; /* Centering the working area horizontally */
+    align-items: center; /* Centering the work area vertically */
 }
 
 
-/* Стилі для контейнера робочої зони меню */
+/* Styles for the menu workspace container */
 .menu-work-area {
     width: 980px;
-    height: 100%; /* Висота збігається з висотою header-container */
+    height: 100%; /* The height matches the height of the header-container */
     background-color: #777777;
-    margin: 0 auto; /* Автоматичне центрування по горизонталі */
-    padding: 15px 10px; /* Внутрішні відступи зверху і знизу 20px, зліва і справа 10px */
-    box-sizing: border-box; /* Враховує відступи в ширині та висоті */
+    margin: 0 auto; /* Placement in the center of the screen */
+    padding: 15px 10px; /* Internal margins top and bottom 20px, left and right 10px */
+    box-sizing: border-box; /* Takes into account width and height indents */
     display: flex;
-    justify-content: center; /* Центрування по горизонталі */
+    justify-content: center; /* Center horizontally */
 }
 
 .menu-list a:hover {
-    text-decoration: underline; /* Підкреслення посилань при наведенні курсору */
+    text-decoration: underline; 
 }
 .menu-list {
-    
-    list-style-type: none; /* Відключаємо маркери списку */
+    list-style-type: none; 
     padding: 0; /* Відключаємо внутрішні відступи */
     margin: 0; /* Відключаємо зовнішні відступи */
     display: flex; /* Змінюємо режим відображення на flex */
@@ -179,6 +181,7 @@ body {
     width: 370px;
     height: 530px;
     background-color: #777777; /* Колір фону контейнера новин */
+    padding-top: 10px;
     padding-left: 20px;
     padding-right: 30px;
     box-sizing: border-box; /* Враховує відступи в ширині та висоті */
@@ -187,7 +190,7 @@ body {
 
 /* Стилі для заголовку новин */
 .news-title {
-    font-size: 40px;
+    font-size: 33px;
     font-weight: bold;
     color: #ffffff; /* Колір заголовку новин */
     margin-bottom: 17px; /* Відступ знизу */
@@ -367,4 +370,11 @@ body {
 .development-container a {
     text-decoration: underline;
     color: #ffffff; /* Колір тексту */
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
