@@ -1,29 +1,31 @@
 body {
     font-family: 'PT Sans', sans-serif;
+    height: 100%;
+    background-color: #777777;
 }
 
 .top-container {
     width: 100%;
     height: 200px;
-    background-color: #d6d6d6; /* Gray color */
+    background-color: #d6d6d6;
 }
 
 /* Styles for header container */
 .header-container {
-    width: 1200px; /* Container width */
+    width: 1200px;
     height: 200px;
-    background-color: #d6d6d6; /* Gray color */
-    margin: 0 auto; /* Center on the screen */
+    background-color: #d6d6d6;
+    margin: 0 auto;
     display: flex;
-    justify-content: center; /* Center work area horizontally */
-    align-items: center; /* Center work area vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 .work-area {
     width: 980px;
-    height: 100%; /* Height including top and bottom padding */
+    height: 100%; 
     padding: 60px 10px; /* Top and bottom padding 60px, left and right padding 10px */
-    box-sizing: border-box; /* Includes padding in width and height */
+    box-sizing: border-box; 
     display: flex;
 }
 
@@ -37,22 +39,21 @@ body {
 .company-logo {
     width: 100px;
     height: 100px;
-    margin-left: 10px;
-    margin-right: 10px; /* Right margin of the image */
+    margin: 0 10px 0 10px;
 }
 
 /* Styles for the company name */
 .company-name {
     font-size: 22px;
     font-weight: bold;
-    color: #777777; /* Text color */
+    color: #777777;
     display: block;
 }
 
 /* Styles for the company subtitle */
 .company-subtitle {
     font-size: 15px;
-    color: #8b8989; /* Text color */
+    color: #8b8989;
     display: block;
     margin-top: 10px; /* Reduce margin to bring it closer to the company name */
 }
@@ -66,9 +67,9 @@ body {
 .phone-number {
     font-size: 35px;
     font-family: 'Open Sans Condensed', sans-serif; 
-    color: #8b8989; /* Text color */
+    color: #8b8989;
     margin-top: 10px; /* Indent from top */
-    text-decoration: none; /* Remove underscore */
+    text-decoration: none; 
 
 }
 
@@ -82,55 +83,43 @@ body {
     width: 1200px; 
     height: 60px; 
     background-color: #777777; 
-    margin: 0 auto; /* Placement in the center of the screen */
+    margin: 0 auto; 
     display: flex;
-    justify-content: center; /* Centering the working area horizontally */
-    align-items: center; /* Centering the work area vertically */
+    justify-content: center;
+    align-items: center;
 }
 
-
-/* Styles for the menu workspace container */
-.menu-work-area {
-    width: 980px;
-    height: 100%; /* The height matches the height of the header-container */
-    background-color: #777777;
-    margin: 0 auto; /* Placement in the center of the screen */
-    padding: 15px 10px; /* Internal margins top and bottom 20px, left and right 10px */
-    box-sizing: border-box; /* Takes into account width and height indents */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-}
 
 .menu-list a:hover {
     text-decoration: underline; 
 }
 .menu-list {
     list-style-type: none; 
-    padding: 0; /* Відключаємо внутрішні відступи */
-    margin: 0; /* Відключаємо зовнішні відступи */
-    display: flex; /* Змінюємо режим відображення на flex */
-    justify-content: center; /* Центрування по горизонталі */
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center;
 }
 
 .menu-list li {
-    margin-right: 60px; /* Відступ між пунктами списку */
-    position: relative; /* Встановлюємо позицію relative для можливості відображення псевдоелементу */
+    margin-right: 60px; 
+    position: relative; 
 }
 
 .menu-list li:not(:last-child)::after {
-    content: "|"; /* Встановлюємо символ вертикальної розділової лінії */
-    position: absolute; /* Встановлюємо позицію absolute */
-    right: -30px; /* Позиціюємо розділову лінію відносно правого краю пункту */
-    top: 50%; /* Вертикальне позиціювання на середину пункту */
-    transform: translateY(-50%); /* Вирівнюємо по вертикалі */
-    font-weight: bold; /* Зробити лінію жирнішою */
+    content: "|"; /* Set the vertical dividing line symbol */
+    position: absolute;
+    right: -30px; /* Position the dividing line relative to the right edge of the item */
+    top: 50%;
+    transform: translateY(-50%); /* Align vertically */
+    font-weight: bold; 
     font-size: 20px;
-    color: #ffffff; /* Колір розділової лінії */
+    color: #ffffff; 
 }
 
 .menu-list li a {
-    text-decoration: none; /* Відключаємо підкреслення посилань */
-    color: #ffffff; /* Колір тексту посилань */
+    text-decoration: none; 
+    color: #ffffff; 
     font-size: 22px;
 }
 
@@ -142,232 +131,206 @@ body {
 
 .picture-content {
     width: 1200px;
-    height: 350px; /* Висота з урахуванням внутрішніх відступів зверху і знизу */
+    height: 350px; 
     background-color: #f8f8f8;
-    margin: 0 auto; /* Автоматичне центрування по горизонталі */
-    padding: 0px 0px; /* Внутрішні відступи зверху і знизу 20px, зліва і справа 10px */
-    box-sizing: border-box; /* Враховує відступи в ширині та висоті */
+    margin: 0 auto; 
+    box-sizing: border-box; 
     display: flex;  
-    justify-content: center; /* Центрування по горизонталі */
+    justify-content: center;
 }
 
-.picture-content img {
-    max-width: 100%;
-    height: auto; /* Зберігає пропорції зображення */
-}
-
-/* Стилі для контейнера новин */
+/* Styles for news container */
 .news-container {
     width: 100%;
     height: 700px; 
-    background-color: #ffffff; /* Можливий колір фону для контейнера новин */
+    background-color: #ffffff; 
 }
 
-/* Стилі для внутрішнього контейнера новин */
+/* Styles for internal news container */
 .news-work-area {
-    width: 980px;
-    height: 100%; /* Висота збігається з висотою */
+    width: 1200px;
+    height: 100%; 
     background-color: #ffffff;
-    margin: 0 auto; /* Автоматичне центрування по горизонталі */
-    padding: 30px 20px; /* Внутрішні відступи зверху і знизу 20px, зліва і справа 10px */
-    box-sizing: border-box; /* Враховує відступи в ширині та висоті */
+    margin: 0 auto; 
+    padding: 30px 130px; 
+    box-sizing: border-box; 
     display: flex;
 }
 
-/* Стилі для контейнера новин */
+/* Styles for news container */
 .news-content {
     width: 370px;
     height: 530px;
-    background-color: #777777; /* Колір фону контейнера новин */
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 30px;
-    box-sizing: border-box; /* Враховує відступи в ширині та висоті */
-    position: relative; /* Встановлення відносного позиціювання для архіву новин */
+    background-color: #777777; 
+    padding: 10px 30px 0 20px;
+    box-sizing: border-box; 
+    position: relative;
 }
 
-/* Стилі для заголовку новин */
+/* Styles for the news title */
 .news-title {
     font-size: 33px;
     font-weight: bold;
-    color: #ffffff; /* Колір заголовку новин */
-    margin-bottom: 17px; /* Відступ знизу */
-    margin-top: 10px; /* Відступ зверху */
+    color: #ffffff;  
+    margin: 10px 0 17px 0;
 }
 
-/* Стилі для списку новин */
+/* Styles for news list */
 .news-list {
-    list-style-type: none; /* Відключаємо маркери списку */
-    padding: 0; /* Відключаємо внутрішні відступи */
-    margin: 0; /* Відключаємо зовнішні відступи */
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
 }
 
-/* Стилі для елементів списку новин */
+/* Styles for news list items */
 .news-list li {
     font-size: 14px;
     line-height: 22px;
-    color: #ffffff; /* Колір тексту новин */
-    margin-bottom: 25px; /* Відступ знизу */
+    color: #ffffff;
+    margin-bottom: 25px; 
 }
 
-/* Оновлені стилі для дат новин */
+/* Updated styles for news dates */
 .news-date {
-    font-style: italic; /* Зробити текст курсивом */
-    margin-bottom: 0px; /* Зменшити відступ між датою та новиною */
-    display: block; /* Робимо дату блоковим елементом для правильного розташування */
+    font-style: italic;
+    margin-bottom: 0px; 
+    display: block; 
 }
 
-/* Стилі для тексту "Архів новин" */
+/* Styles for "News Archive" text */
 .news-archive {
     font-size: 14px;
-    color: #ffffff; /* Колір тексту */
-    text-align: right; /* Вирівнювання тексту по правому краю */
-    text-decoration: underline; /* Підкреслення тексту */
-    position: absolute; /* Абсолютне позиціювання */
-    bottom: 70px; /* Відступ знизу */
-    right: 40px; /* Відступ справа */
-}
-/* Стилі для посилань "Архів новин" */
-.news-archive a {
-    color: #ffffff; /* Змінено на білий колір */
-    text-decoration: underline; /* Підкреслення тексту */
+    text-align: right; 
+    position: absolute; 
+    margin: 10px 30px 50px 210px;
 }
 
-/* Стилі для контейнера нашої студії */
+/* Styles for "News Archive" links */
+.news-archive a {
+    color: #ffffff; 
+    text-decoration: underline; 
+}
+
+/* Styles for our studio container */
 .studio-container {
     width: 600px;
     height: 510px;  
     background-color: #ffffff;
-    margin-left: 40px; /* Відступ від лівого краю контейнера новин */
-    padding: 10px; /* Внутрішні відступи */
-    padding-right: 10px;
-    padding-top: 10px;
+    margin-left: 40px; 
+    padding: 10px; 
 }
 
-/* Стилі для заголовка нашої студії */
+/* Styles for our studio header */
 .studio-title {
     font-size: 40px;
     color: #333333;
-    margin-bottom: 15px; /* Відступ знизу */
+    margin-bottom: 15px;
 }
 
-/* Стилі для тексту в нашій студії */
+/* Styles for text in our studio */
 .studio-container p {
     font-size: 14px;
     line-height: 22px;
     color: #666666;
-    margin-bottom: 20px; /* Відступ знизу між параграфами */
+    margin-bottom: 20px;
 }
 
-/* Стилі для контейнера футера */
 .footer-container {
     width: 100%;
-    height: 220px; 
+    height: 100%;
     background-color: #777777;
-    
-}
-
-.footero-container {
-    width: 1200px; /* Ширина контейнера */
-    height: 220px;
-    background-color: #777777; /* Сірий колір */
-    margin: 0 auto; /* Розміщення по центру екрану */
-    display: flex;
-    justify-content: center; /* Центрування робочої зони по горизонталі */
-    /* align-items: center;  Центрування робочої зони по вертикалі */
 }
 
 .footer-work-area {
-    width: 980px;
-    height: 100%; 
+    width: 1200px;
+    height: 100%;
     background-color: #777777;
-    margin: 0 auto; 
-    padding: 40px 20px;
+    margin: 0 auto;
+    padding: 40px 130px;
     box-sizing: border-box;
     display: flex;
 }
 
-/* Стилі для контейнера з копірайтом */
+/* Styles for container with copyright */
 .copyright-container {
     width: 280px;
     height: 100px; 
     text-align: left;
     background-color: #777777;
- }
+}
 
- /* Стилі для тексту копірайту */
- .copyright-container p {
-    margin: 0; /* Відключаємо зовнішні відступи */
+/* Styles for the copy text */
+.copyright-container p {
+    margin: 0;
     font-size: 14px;
     color: #ffffff;
- }
+}
 
- /* Стилі для контейнера з посиланнями */
+/* Styles for container with links */
 .links-container {
-    margin-left: 105px;
+    margin-left: 125px;
     width: 150px;
     text-align: left;
     background-color: #777777;
 }
 
-/* Стилі для вертикального списку посилань */
+/* Styles for vertical link list */
 .footer-links {
-    list-style-type: none; /* Відключаємо маркери списку */
-    padding: 0; /* Відключаємо внутрішні відступи */
-    margin: 0; /* Відключаємо зовнішні відступи */
+    width: 120px;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 90px;
 }
 
-/* Стилі для елементів списку посилань */
+/* Styles for link list items */
 .footer-links li {
-    margin-bottom: 8px; /* Відступ між пунктами списку */
+    margin-bottom: 8px;
 }
 
-/* Стилі для посилань */
+/* Styles for links */
 .footer-links a {
     text-decoration: underline;
     font-size: 14px;
     color: #ffffff;
 }
 
-/* Стилі для контейнера-компанії */
+/* Styles for the company container */
 .company-logo-container {
     width: 38px;
     height: 40px;
     display: flex;
-    justify-content: center; /* Центрування по горизонталі */
-    align-items: center; /* Центрування по вертикалі */
+    justify-content: center;
+    align-items: center;
 }
 
-/* Стилі для логотипу компанії */
+/* Styles for company logo */
 .company-logo-small {
-    margin-left: 535px;
+    margin-left: 520px;
     width: 30px;
     height: 30px;
-    /* Додайте ваші стилі для логотипу компанії тут */
 }
 
-/* Стилі для контейнера розробки сайту */
+/* Styles for the site development container */
 .development-container {
-    margin: 0; /* Відключаємо зовнішні відступи */
     background-color: #777777;
     width: 200px;
     height: 60px;
     font-size: 14px;
     color: white;
     text-align: start;
-    margin-left: 270px;
+    margin-left: 260px;
 }
 
 .development-container p {
-    margin: 0; /* Відключаємо зовнішні відступи */
+    margin: 0;
     font-size: 14px;
     color: #ffffff;
-    
- }
-/* Стилі для посилання в контейнері розробки сайту */
+}
+
+/* Styles for the link in the site development container */
 .development-container a {
     text-decoration: underline;
-    color: #ffffff; /* Колір тексту */
+    color: #ffffff;
 }
 
 /* CSS Reset */
@@ -376,3 +339,4 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
